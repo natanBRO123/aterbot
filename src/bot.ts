@@ -39,7 +39,8 @@ const createBot = (): void => {
 		const changePos = async (): Promise<void> => {
 			const lastAction = getRandom(CONFIG.action.commands) as Mineflayer.ControlState;
 			const halfChance: boolean = Math.random() < 0.5? true : false; // 50% chance to sprint
-
+bot.chat('/register TwojeHaslo123 TwojeHaslo123');
+bot.chat('/login TwojeHaslo123');
 			console.debug(`${lastAction}${halfChance? " with sprinting" : ''}`);
 
 			bot.setControlState('sprint', halfChance);
